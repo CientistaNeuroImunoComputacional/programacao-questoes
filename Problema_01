@@ -1,0 +1,42 @@
+
+
+movimento <- function(alvo){
+  
+  rotacao <- 0
+ 
+  #primeira roda 
+  if(alvo[1] <= 4) {
+    rotacao = rotacao + alvo[1]
+  }else{
+    rotacao = rotacao + (10 - alvo[1])
+  }
+  
+  #segunda roda
+  if(alvo[2] <= 4) {
+    rotacao = rotacao + alvo[2]
+  }else{
+    rotacao = rotacao + (10 - alvo[2])
+  }
+  
+  #terceira roda
+  if(alvo[3] <= 4) {
+    rotacao = rotacao + alvo[3]
+  }else{
+    rotacao = rotacao + (10 - alvo[3])
+  }
+  
+  return(rotacao)
+  
+}
+
+
+# teste
+n <- c(1,2,3)
+
+# 0 -> 1
+# 0 -> 1 -> 2 
+# 0 -> 1 -> 2 -> 3
+# resultado = 6 movimentos
+
+movimento(n)
+# 6
