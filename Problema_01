@@ -2,7 +2,7 @@
 
 movimento <- function(alvo){
   
-  rotacao <- 0
+  rotacao <- 0 
  
   #primeira roda 
   if(alvo[1] <= 4) {
