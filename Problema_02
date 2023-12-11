@@ -1,11 +1,11 @@
-#modelo de função para inverter uma palavra
+# Modelo de função para inverter uma palavra
 
 reverso = function(palavra){
-  temp = strsplit(palavra,split="")
-  letras = unlist(temp)
-  n = length(letras)
-  palavra.inverso = letras[n:1]
-  return(cat(palavra.inverso,sep ="" ))
+    temp = strsplit(palavra,split="")
+    letras = unlist(temp)
+    n = length(letras)
+    palavra.inverso = letras[n:1]
+    return(cat(palavra.inverso,sep ="" ))
 }
 
 reverso("Neuroimunologia Computacional")
